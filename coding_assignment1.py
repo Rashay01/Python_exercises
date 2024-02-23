@@ -30,47 +30,47 @@ def list_available_rooms(rooms):
 
 
 #-----------------------------------------Testing----------------------------------------------
-# rooms = [{
-#     "room_number": 1,
-#     "bed_type": "Queen",
-#     "smoking": True,
-#     "availability": True
-# }, {
-#     "room_number": 2,
-#     "bed_type": "Single",
-#     "smoking": False,
-#     "availability": False
-# }, {
-#     "room_number": 3,
-#     "bed_type": "Double",
-#     "smoking": True,
-#     "availability": True
-# }, {
-#     "room_number": 4,
-#     "bed_type": "King",
-#     "smoking": False,
-#     "availability": True
-# }]
+rooms = [{
+    "room_number": 1,
+    "bed_type": "Queen",
+    "smoking": True,
+    "availability": True
+}, {
+    "room_number": 2,
+    "bed_type": "Single",
+    "smoking": False,
+    "availability": False
+}, {
+    "room_number": 3,
+    "bed_type": "Double",
+    "smoking": True,
+    "availability": True
+}, {
+    "room_number": 4,
+    "bed_type": "King",
+    "smoking": False,
+    "availability": True
+}]
 
-# add_room(rooms, 5, "Queen", True)
-# add_room(rooms, 6)
-# add_room(rooms, 1)
+add_room(rooms, 5, "Queen", True)
+add_room(rooms, 6)
+add_room(rooms, 1)
 
-# print(rooms)
+print(rooms)
 
-# print()
-# print()
+print()
+print()
 
-# # print(book_room(rooms))
-# # print(book_room(rooms))
-# # print(book_room(rooms))
-# # print(book_room(rooms, "Queen", True))
+print(book_room(rooms))
+print(book_room(rooms))
+print(book_room(rooms))
+print(book_room(rooms, "Queen", True))
+print()
+print(rooms)
 
-# print(rooms)
-
-# print()
-# print()
-# print(list_available_rooms(rooms))
+print()
+print("Avaliable rooms:")
+print(list_available_rooms(rooms))
 
 #----------------------------------------------------------------------------------------------------
 #Task 2 without the message for return 
