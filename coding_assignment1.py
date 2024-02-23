@@ -71,9 +71,9 @@ print(list_available_rooms(rooms))
 
 
 # def book_room(rooms, preferred_bed_type="Double", smoking_preference=False):
-# for room in rooms:
-#   if (room["bed_type"] == preferred_bed_type
-#       and room["smoking"] == smoking_preference and room["availability"]):
-#     room["availability"] = False
-#     return "room successfully booked"
-# return f"rooms with {preferred_bed_type} and smoking: {smoking_preference} fully booked"
+#   for room in rooms:
+#     if (room["bed_type"] == preferred_bed_type
+#         and room["smoking"] == smoking_preference and room["availability"]):
+#       room["availability"] = False
+#       return f"room {room.get('room_number')} successfully booked"
+#   return f"rooms with {preferred_bed_type} and smoking: {smoking_preference} fully booked"
