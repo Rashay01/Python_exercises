@@ -28,46 +28,51 @@ def list_available_rooms(rooms):
 
 
 #-----------------------------------------Testing----------------------------------------------
-rooms = [{
-    "room_number": 1,
-    "bed_type": "Queen",
-    "smoking": True,
-    "availability": True
-}, {
-    "room_number": 2,
-    "bed_type": "Single",
-    "smoking": False,
-    "availability": False
-}, {
-    "room_number": 3,
-    "bed_type": "Double",
-    "smoking": True,
-    "availability": True
-}, {
-    "room_number": 4,
-    "bed_type": "King",
-    "smoking": False,
-    "availability": True
-}]
+# rooms = [{
+#     "room_number": 1,
+#     "bed_type": "Queen",
+#     "smoking": True,
+#     "availability": True
+# }, {
+#     "room_number": 2,
+#     "bed_type": "Single",
+#     "smoking": False,
+#     "availability": False
+# }, {
+#     "room_number": 3,
+#     "bed_type": "Double",
+#     "smoking": True,
+#     "availability": True
+# }, {
+#     "room_number": 4,
+#     "bed_type": "King",
+#     "smoking": False,
+#     "availability": True
+# }]
 
-add_room(rooms, 5, "Queen", True)
-add_room(rooms, 6)
-add_room(rooms, 1)
-print(rooms)
+# add_room(rooms, 5, "Queen", True)
+# add_room(rooms, 6)
+# add_room(rooms, 1)
+# print(rooms)
 
-print()
-print()
+# print()
+# print()
 
-print(book_room(rooms))
-print(book_room(rooms))
-print(book_room(rooms))
-print(book_room(rooms, "Queen", True))
+# book_room(rooms)
+# book_room(rooms)
+# book_room(rooms)
+# book_room(rooms, "Queen", True)
 
-print(rooms)
+# # print(book_room(rooms))
+# # print(book_room(rooms))
+# # print(book_room(rooms))
+# # print(book_room(rooms, "Queen", True))
 
-print()
-print()
-print(list_available_rooms(rooms))
+# print(rooms)
+
+# print()
+# print()
+# print(list_available_rooms(rooms))
 
 
 # def book_room(rooms, preferred_bed_type="Double", smoking_preference=False):
