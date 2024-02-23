@@ -24,8 +24,6 @@ def book_room(rooms, preferred_bed_type="Double", smoking_preference=False):
 
 
 
-
-
 #Task3
 def list_available_rooms(rooms):
   return [room for room in rooms if room["availability"]]
