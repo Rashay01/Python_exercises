@@ -19,7 +19,11 @@ def book_room(rooms, preferred_bed_type="Double", smoking_preference=False):
     if (room["bed_type"] == preferred_bed_type
         and room["smoking"] == smoking_preference and room["availability"]):
       room["availability"] = False
-      return 
+      return f"room {room.get('room_number')} successfully booked"
+  return f"rooms with {preferred_bed_type} and smoking: {smoking_preference} fully booked"
+
+
+
 
 
 #Task3
@@ -53,15 +57,11 @@ def list_available_rooms(rooms):
 # add_room(rooms, 5, "Queen", True)
 # add_room(rooms, 6)
 # add_room(rooms, 1)
+
 # print(rooms)
 
 # print()
 # print()
-
-# book_room(rooms)
-# book_room(rooms)
-# book_room(rooms)
-# book_room(rooms, "Queen", True)
 
 # # print(book_room(rooms))
 # # print(book_room(rooms))
@@ -74,11 +74,20 @@ def list_available_rooms(rooms):
 # print()
 # print(list_available_rooms(rooms))
 
+#----------------------------------------------------------------------------------------------------
+#Task 2 without the message for return 
+
 
 # def book_room(rooms, preferred_bed_type="Double", smoking_preference=False):
 #   for room in rooms:
 #     if (room["bed_type"] == preferred_bed_type
 #         and room["smoking"] == smoking_preference and room["availability"]):
 #       room["availability"] = False
-#       return f"room {room.get('room_number')} successfully booked"
-#   return f"rooms with {preferred_bed_type} and smoking: {smoking_preference} fully booked"
+#       return 
+
+# book_room(rooms)
+# book_room(rooms)
+# book_room(rooms)
+# book_room(rooms, "Queen", True)
+
+# print(rooms)
