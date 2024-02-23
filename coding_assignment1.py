@@ -54,6 +54,7 @@ rooms = [{
 
 add_room(rooms, 5, "Queen", True)
 add_room(rooms, 6)
+add_room(rooms, 7, "King")
 add_room(rooms, 1)
 
 print(rooms)
@@ -65,6 +66,7 @@ print(book_room(rooms))
 print(book_room(rooms))
 print(book_room(rooms))
 print(book_room(rooms, "Queen", True))
+print(book_room(rooms, "Double"))
 print()
 print(rooms)
 
