@@ -27,7 +27,7 @@ ans1 = multi(a,b)
 
 ### What is a currying?
 
-Curying is a functional programing tequnique. Currying is the process of takig the function that has multiple functions, and onverting that to be executed one after the other as single arument functions.
+Curying is a functional programing tequnique. Currying is the process of taking the function that has multiple functions, and onverting that to be executed one after the other as single arument functions.
 
 currying is the practice of simplifying the execution of a function that takes multiple arguments into executing sequential single-argument functions
 
