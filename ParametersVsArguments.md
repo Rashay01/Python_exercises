@@ -25,7 +25,7 @@ ans1 = multi(a,b)
 
 # What is currying and partial?
 
-### What is a currying function?
+### What is a currying?
 
 Curying is a functional programing.
 
