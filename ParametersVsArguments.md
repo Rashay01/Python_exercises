@@ -27,11 +27,12 @@ ans1 = multi(a,b)
 
 ### What is a currying?
 
-Curying is a functional programing tequnique. Currying is used to transform multiple-argument function into single argument function.
+Curying is a functional programing tequnique. currying is the practice of simplifying the execution of a function that takes multiple arguments into executing sequential single-argument functions
 
 In other words, it is the process of taking a function that has multiple aguments, and converts that to be executed one after the other as single agument functions.
 
 
+E.g: 
 ```Python
 def currying( g , f ):
   def h(x):
