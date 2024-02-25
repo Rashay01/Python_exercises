@@ -33,7 +33,7 @@ In other words, it is the process of taking a function that has multiple agument
 
 An example  is  taking `f(a, b, c)` and makig it `F(a)(b)(c)`
 
-E.g: The example below converts Rand to Pounds - This has nested function which requires the result of another. Ass we have the exchange rate from Rands-Dollars and the Dollar-Pounds 
+E.g: The example below converts Rand to Pounds - This has nested function which requires the result of another. As we have the exchange rate from Rands-Dollars and the Dollar-Pounds 
 
 ```Python
 def currying( g , f ):
@@ -45,11 +45,11 @@ def currying( g , f ):
 def rand_to_dollar(ammount):  
   return ammount*0.052  
 
-def usd_to_pound(ammount):   
+def dollar_to_pound(ammount):   
   return ammount * 0.76
 
 
-Convert = currying(rand_to_dollar,usd_to_pound )
+Convert = currying(rand_to_dollar,dollar_to_pound )
 print(Convert(565))
 ```
 
