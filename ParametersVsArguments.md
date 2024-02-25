@@ -1,7 +1,7 @@
 # Difference between Paramenters vs Arguments
 
 ### Paramenters:
-A parameters are the names used in the function definition. It is like a placeholder for the argments that will be passed to the functions.
+Parameters are the names used in function definition. It is like a placeholder for the argments that will be passed to the functions.
 
 E.g. Below the names `value1` and `value2` are the parameters.
 
@@ -12,7 +12,7 @@ def multi (value1, value2):
 
 ### Arguments
 
-A arugument is the actual value that is passed to the function when it is called. They are placed within the parenthesis when the function is callled. They can be a value, variable,calss, or function that is passed.
+An arugument is the actual value that is passed to the function when it is called. They are placed within the parenthesis `()` when the function is callled. It can be a value, variable,class, or function that is passed.
 
 E.g. The values `1` and `2` are arguments that are passsed to the funcion `multi`. The variables `a` and `b` are argumenst passed to the function.
 
