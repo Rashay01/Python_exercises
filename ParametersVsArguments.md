@@ -31,8 +31,10 @@ Curying is a functional programing tequnique. Currying is the practice of simpli
 
 In other words, it is the process of taking a function that has multiple aguments, and converts that to be executed one after the other as single agument functions.
 
+An example  is  taking `f(a, b, c)` and makig it `F(a)(b)(c)`
 
-E.g: The example below converts 
+E.g: The example below converts Rand to Pounds - This has nested function which requires the result of another. Ass we have the exchange rate from Rands-Dollars and the Dollar-Pounds 
+
 ```Python
 def currying( g , f ):
   def h(x):
