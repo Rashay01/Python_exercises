@@ -1,7 +1,7 @@
 # Difference between Paramenters vs Arguments
 
 ### Paramenters:
-Parameters are the names used in function definition. It is like a placeholder for the argments that will be passed to the functions.
+Parameters are the names used in function definitions. It is like a placeholder for the argments that will be passed to the functions.
 
 E.g. Below the names `value1` and `value2` are the parameters.
 
