@@ -32,7 +32,7 @@ Curying is a functional programing tequnique. currying is the practice of simpli
 In other words, it is the process of taking a function that has multiple aguments, and converts that to be executed one after the other as single agument functions.
 
 
-E.g: 
+E.g: The example below converts 
 ```Python
 def currying( g , f ):
   def h(x):
