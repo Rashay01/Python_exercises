@@ -33,7 +33,7 @@ In other words, it is the process of taking a function that has multiple agument
 
 An example  is  taking `f(a, b, c)` and making it `F(a)(b)(c)`
 
-E.g: The example below converts Rands to Pounds. We have the exchange rate from Rand to Dollar and exchange rate of Dollar to Pound. This nested function requires the result of another function which is the conversion of rand to dolar.
+The example of curring below converts Rands to Pounds. We have the exchange rate from Rand to Dollar and exchange rate of Dollar to Pound. This nested function requires the result of another function which is the conversion of rand to dolar.
 
 ```Python
 def currying( g , f ):
@@ -58,7 +58,7 @@ print(convert_Rand_Pound(100))
 It enables one to create a new function by making certain aruments fixed. It is like a factory for creating new functions.
 
 
-E.g: In the example below: `g` create a new partial function of `h` with the values of `a=3` and `b=1` fixed. So when the function `g` is called, it only takes on an argument for `c`.
+In the example below: `g` create a new partial function of `h` with the values of `a=3` and `b=1` fixed. So when the function `g` is called, it only takes on an argument for `c`.
 
 ```python 
 from functools import partial
