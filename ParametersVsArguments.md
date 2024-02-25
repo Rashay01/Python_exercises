@@ -31,6 +31,9 @@ Curying is a functional programing tequnique.
 
 currying is the practice of simplifying the execution of a function that takes multiple arguments into executing sequential single-argument functions
 
+
+In simple terms, Currying is used to transform multiple-argument function into single argument function by evaluating incremental nesting of function arguments
+
 ```Python
 def currying( g , f ):
   def h(x):
