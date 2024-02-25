@@ -27,14 +27,32 @@ ans1 = multi(a,b)
 
 ### What is a currying?
 
-Curying is a functional programing.
+Curying is a functional programing tequnique.
+
+```Python
+def currying( g , f ):
+  def h(x):
+      return g(f(x))
+  return h
+
+
+def rand_to_dollar(ammount):  
+  return ammount*0.052  
+
+def usd_to_pound(ammount):   
+  return ammount * 0.76
+
+
+Convert = currying(rand_to_dollar,usd_to_pound )
+print(Convert(565))
+```
 
 ### What is a partial function?
 
-It enables one to create a new function by making certain aruments fixed. It is a factory for creating new functions.
+It enables one to create a new function by making certain aruments fixed. It is like a factory for creating new functions.
 
 
-E.g: In the example below: `g` create a new partial function of `h` with the values of `a=3` and `b=1` fixed. So when the function `g` is called, it only takes in a argument for `c`.
+E.g: In the example below: `g` create a new partial function of `h` with the values of `a=3` and `b=1` fixed. So when the function `g` is called, it only takes on an argument for `c`.
 
 ```python 
 from functools import partial
