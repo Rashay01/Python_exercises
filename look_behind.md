@@ -21,7 +21,7 @@ print(ans) # ['over']
 In this example, the findall function searches for jumps\s (i.e. jumps with a space at the end) and then will capture all the alphanumeric characters that come after. It will return `over` as the match.
 
 
-### Negativelook behind
+### Negative lookbehind
 
 It will make sure that thee parser does not exist before the pattern that is found
 
