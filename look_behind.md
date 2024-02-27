@@ -27,16 +27,16 @@ When the pattern is found it makes sure the parser is not directly infornt of th
 
 `(?<!Charlook)X`
 
-It will search for X if there is no `Charlook` before the matched characters.
+It will search for X and f there is no `Charlook` before the matched characters.
 
 ```python
 import re
 
-text = ".2 The dog is big.23 people"
+text = ".2 The dog is big.43 people"
 ans = re.findall(r'(?<!\.)\d+', text)
 
 print(ans) #['3']
 ```
 
-In this example, it is looking for a digit without a `.` (period) before it. The only digit without a period before it is `3` as `2` is the char before the three.
+In this example, it is searching for a digit without a `.` (period) in fornt of it. As `4` is the character before the `3`, therefor the only digit without a period before it is `3`,
 
