@@ -38,5 +38,5 @@ ans = re.findall(r'(?<!\.)\d+', text)
 print(ans) #['3']
 ```
 
-In this example, it is searching for a digit without a `.` (period) in fornt of it. As `4` is the character before the `3`, therefor the only digit without a period before it is `3`,
+In this example, it is searching for a digit without a `.` (period) in fornt of it. As `4` is the character before the `3`, the only digit without a period before it is `3`,
 
