@@ -26,8 +26,8 @@ In this example, the findall function searches for jumps\s (i.e. jumps with a sp
 When the pattern is found it makes sure the parser is not directly infornt of the matched pattern.
 
 `(?<!Charlook)X`
-
-It will search for X andamtch with it if there is no `Charlook` in fornt of it.
+ 
+if there is no `Charlook` in fornt of `X` it will then match with `X`.
 
 ```python
 import re
