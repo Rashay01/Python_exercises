@@ -25,6 +25,7 @@ In this example, the findall function searches for jumps\s (i.e. jumps with a sp
 
 When the pattern is found it makes sure the parser is not directly infornt of the matched pattern.
 
+It makes sure that the parser does not exist directly in fornt of the pattern that it is lookng for.
 `(?<!Charlook)X`
  
 if there is no `Charlook` in fornt of `X` it will then match with `X`.
