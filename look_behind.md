@@ -23,11 +23,11 @@ In this example, the findall function searches for jumps\s (i.e. jumps with a sp
 
 ### Negative lookbehind
 
-It will make sure that thee parser does not exist before the pattern that is found
+When the pattern is found it makes sure the parser is not directly infornt of the matched pattern.
 
 `(?<!Charlook)X`
 
-It will look for X if there is no `Charlook` before the matched characters.
+It will search for X if there is no `Charlook` before the matched characters.
 
 ```python
 import re
