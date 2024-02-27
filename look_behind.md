@@ -1,11 +1,12 @@
 # lookbehind in regex assignment
 
 ### lookbehind
-It looks for the pattern to the right of the parsers current position and dertermins if its a match or not.
+
+It searches for the pattern to the right of the parsers current position and dertermins wheather if its a match or not.
 
 `(?<=Charlook)X`
 
-It will look for `X` and if the pattern `Charlook` follows after it - then it will be a match.
+It will searches for `Charlook` and if the pattern `X` follows after it - then it will be a match.
 
 e.g:
 ```python
