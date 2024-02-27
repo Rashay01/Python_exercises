@@ -18,7 +18,7 @@ example = re.findall(r'(?<=jumps\s)\w+', text)
 print(example) # ['over']
 ```
 
-In this example findall function searches for jumps\s (i.e. jumps with a space at the end) then will locate all the alphanumeric char's after. It will return `over` as the match.
+In this example findall function searches for jumps\s (i.e. jumps with a space at the end) and then will captures all the alphanumeric characters that come after. It will return `over` as the match in a list.
 
 
 ### Negativelook behind
