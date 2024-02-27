@@ -27,7 +27,7 @@ When the pattern is found it makes sure the parser is not directly infornt of th
 
 `(?<!Charlook)X`
 
-It will search for X and f there is no `Charlook` before the matched characters.
+It will search for X andamtch with it if there is no `Charlook` in fornt of it.
 
 ```python
 import re
