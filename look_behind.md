@@ -13,9 +13,9 @@ e.g:
 import re
 
 text = "The quick brown fox jumps over the lazy dog"
-example = re.findall(r'(?<=jumps\s)\w+', text)
+ans = re.findall(r'(?<=jumps\s)\w+', text)
 
-print(example) # ['over']
+print(ans) # ['over']
 ```
 
 In this example findall function searches for jumps\s (i.e. jumps with a space at the end) and then will captures all the alphanumeric characters that come after. It will return `over` as the match in a list.
@@ -33,9 +33,9 @@ It will look for X if there is no `Charlook` before the matched characters.
 import re
 
 text = ".2 The dog is big.23 people"
-example = re.findall(r'(?<!\.)\d+', text)
+ans = re.findall(r'(?<!\.)\d+', text)
 
-print(example) #['3']
+print(ans) #['3']
 ```
 
 In this example, it is looking for a digit without a `.` (period) before it. The only digit without a period before it is `3` as `2` is the char before the three.
