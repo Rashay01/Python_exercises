@@ -112,7 +112,7 @@ class ClassName:
     def __call__(self, *args, **kwargs):
         """do things before function is executed"""
         ans = self.func(*args, **kwargs)
-        """do things before function is executed"""
+        """do things after function is executed"""
         return ans
 
 
