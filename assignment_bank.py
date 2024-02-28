@@ -12,7 +12,7 @@ class  Bank:
         return f"Your balance is: R{self.balance:,}"
 
     def withdraw(self, amount):
-        if (self.balance> amount):
+        if (self.balance>= amount):
             self.balance -= amount
             self.create_transaction("withdraw", amount)
             return f"Success. Your Balance is: R{self.balance:,}"
