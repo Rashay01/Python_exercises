@@ -77,7 +77,7 @@ func()
 
 ## Using classes
 
-To create a decorator in a class, You will pass the function as a parameter to the constortor (`__init_`) of the class. This will vreate a instance variable to store the passed function.
+To create a decorator in a class, You will pass the function as a parameter to the constortor (`__init_`) of the class. This will vreate a instance variable to store the passed function. One will need a `__call__` function declared in the class, where one will execute things to be done before the function is executed in the `return`.
 
 ### Syntax/layout
 ```python
