@@ -15,14 +15,14 @@ class Bank:
         if self.balance >= amount:
             self.balance -= amount
             self.__create_transaction("withdraw", amount)
-            return f"Success. {self.display_balance()}"
+            return f"Success. Your balance is: R{self.balance:,}"
         else:
             return f"Unsuccessful. Insufficent funds."
 
     def deposit(self, amount):
         self.balance += amount
         self.__create_transaction("deposit", amount)
-        return f"Success. {self.display_balance()}"
+        return f"Success. Your balance is: R{self.balance:,}"
 
     def __create_transaction(self, type, amount):
         if len(self.transactions) > 0:
@@ -46,6 +46,10 @@ class Bank:
 
 
 caleb1 = Bank(125, "Caleb Potts", 100_000)
+
+print('withdraw R102,000')
+print(caleb1.withdraw(102_000))
+
 print('withdraw R2,000')
 print(caleb1.withdraw(2_000))
 
