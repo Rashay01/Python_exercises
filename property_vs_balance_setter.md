@@ -6,7 +6,7 @@ It is a built in decorator in python. It enables a getter function to act like a
 
 ## @balance.setter
 
-It works in conjunction with the @property decorator. It enables the setter function to take in a value without the function i.e `()`.One can alter the name `balance` to the name of the getter function. It allows one to assign a value to the function, in the same mannor as a variable.
+It works in conjunction with the @property decorator. It enables the setter function to take in a value without the function i.e `()`.One can alter the name `balance` to the name of the getter function. It allows one to assign a value to the function, in the same manner as a variable.
 
 `@getter_function_name.setter`
 
@@ -45,7 +45,8 @@ print(pt1.balance)
 # pt1.balance --> 'Yes' | <bound method Athlete.balance of <__main__.Athlete object at (memory location)>
 ```
 
-In this example, one is able to get the athlete pt1's balance as `pt1.email` instad of calling it like a function `pt1.email()`. One is also able to set the new balance value using the assignment operator `=` instaed of calling a setter function `pt1.balance("Great")`
+In this example, the use of `@property` and `@balance.setter`.This enables
+one to get the athlete pt1's balance as `pt1.email` instead of calling it like a function `pt1.email()`. One is also able to set the new balance value using the assignment operator `=` instead of calling a setter function `pt1.balance("Great")`
  
 # Creating you own decorator 
 
