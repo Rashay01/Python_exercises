@@ -45,7 +45,7 @@ print(pt1.balance)
 # pt1.balance --> 'Yes' | <bound method Athlete.balance of <__main__.Athlete object at (memory location)>
 ```
 
-In this example, the use of `@property` and `@balance.setter`.This enables
+In this example, the use of `@property` and `@balance.setter` is highlighted.This enables
 one to get the athlete pt1's balance as `pt1.email` instead of calling it like a function `pt1.email()`. One is also able to set the new balance value using the assignment operator `=` instead of calling a setter function `pt1.balance("Great")`
  
 # Creating you own decorator 
@@ -62,5 +62,12 @@ def outer(func):
         """do things before function is eecuted"""
         func()
         """do things after function is eecuted"""
+    return inner
+
+@outer
+def func():
+    pass
+
+func()
 ```
 ## Using classes
