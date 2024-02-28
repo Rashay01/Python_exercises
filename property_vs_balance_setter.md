@@ -52,7 +52,7 @@ one to get the athlete pt1's balance as `pt1.email` instead of calling it like a
 
 ## Using function
 
-To create a decorator in a function. You need a outer function which takes a function a parameter and a inner function which will wrap around the function passed - that will be executed. the outer function is a Higher Order Function (HOF). The inner function is able to access the function that is passed because it is apart of its lexical scope. In the inner function you can add things to do before and after the passed function is called. You are able to use the outer function's name as the name of the decorator `@outer_function_name`.
+To create a decorator in a function, one needs an outer function which takes a function as a parameter and an inner function which will wrap around the function passed,which will be executed. The outer function is a Higher Order Function (HOF). The inner function is able to access the function that is passed because it is a part of its lexical scope. Within the inner function, one is able to execute items to be done, before and/or after the passed function is called. One is able to use the outer function's name as the name of the decorator `@outer_function_name`.
 
 Layout/ styntax:
 
