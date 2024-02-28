@@ -1,5 +1,7 @@
 # Python_exercises
 
+[Map to links](https://whimsical.com/python-data-types-classification-Q967VqqPXDmUW5QPjXgdK2)
+
 
 # set up Git Notes
 
