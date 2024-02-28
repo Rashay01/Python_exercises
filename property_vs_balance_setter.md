@@ -52,20 +52,23 @@ one to get the athlete pt1's balance as `pt1.email` instead of calling it like a
 
 ## Using function
 
-To create a decorator in a function, one needs an outer function which takes a function as a parameter and an inner function which will wrap around the function passed,which will be executed. The outer function is a Higher Order Function (HOF). The inner function is able to access the function that is passed because it is a part of its lexical scope. Within the inner function, one is able to execute items to be done, before and/or after the passed function is called. One is able to use the outer function's name as the name of the decorator `@outer_function_name`.
+To create a decorator in a function, one needs an outer function which takes a function as a parameter. It also requires an inner function which will wrap around the function passed. This will be executed. The outer function is a Higher Order Function (HOF). The inner function is able to access the function that is passed because it is a part of its lexical scope. Within the inner function, one is able to execute items to be done, before and/or after the passed function is called. One is able to use the outer function's name as the name of the decorator `@outer_function_name`. The `*args` allow any arguments of the function to be passed. The `**kwargs` allows any keyword aruments to passed to the function. The decorator imported from `functools` will prevent the declorator ffrom hiding the function they are placed on. This will make one is still able to read the documentation of the function (i.e. dunder variabe - __doc__).  
 
 ### Layout/ styntax:
 
 ```python
+from functools import wraps
+
 def outer(func):
-    def inner():
+    @wraps(func)
+    def inner(*args, **kwargs):
         """do things before function is eecuted"""
-        func()
+        func(*args, **kwargs)
         """do things after function is eecuted"""
     return inner
 
 @outer
-def func():
+def func(values):
     pass
 
 func()
