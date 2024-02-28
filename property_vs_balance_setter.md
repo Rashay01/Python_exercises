@@ -74,6 +74,30 @@ def func(values):
 func()
 ```
 
+#### Example:
+```python 
+import time
+from functools import wraps
+
+def time_taken(func):
+    @wraps(func)
+    def inner(*args, **kwargs):
+        start = time.time()
+        func(*args, **kwargs)
+        end = time.time()
+        print(f"Time taken to execute function:{(end - start)/1000}")
+    return inner
+
+
+@time_taken
+def adding_multiply(num):
+    time.sleep(2)
+    print(f"The ans is: {10*num+1000 *2}")
+
+adding_multiply(10)
+```
+In this example we are using the decorator
+
 
 ## Using classes
 
