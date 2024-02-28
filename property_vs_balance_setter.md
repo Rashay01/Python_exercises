@@ -101,7 +101,7 @@ In this example we are using the decorator created in the `time_taken` function 
 
 ## Using classes
 
-To create a decorator in a class, one will pass the function as a parameter to the constructor (`__init_`) of the class. This will create an instance variable to store the passed function. One will need a `__call__` function declared in the class, where one will execute the things to be done before the function is executed, in the `return`. The `*args, **kwargs` will take in the arguemnts and keyword-arguments respectively. The name of the class will be the name of the decorator `@ClassName`.
+To create a decorator in a class, one will pass the function as a parameter to the constructor (`__init_`) of the class. This will create an instance variable to store the passed function. One will need a `__call__` function declared in the class, where one will execute the things to be done before/or after the function is executed, in the `return`. The `*args, **kwargs` will take in the arguemnts and keyword-arguments respectively. The name of the class will be the name of the decorator `@ClassName`.
 
 ### Syntax/layout
 ```python
@@ -111,7 +111,9 @@ class ClassName:
 
     def __call__(self, *args, **kwargs):
         """do things before function is executed"""
-        return self.func(*args, **kwargs)
+        ans = self.func(*args, **kwargs)
+        """do things before function is executed"""
+        return ans
 
 
 @ClassName
@@ -120,3 +122,25 @@ def func(values):
 
 func()
 ```
+
+#### example
+```python
+class N_Decorator:
+  def __init__(self, func):
+    self.func = func
+
+  def __call__(self, *args, **kwargs):
+    print("Before execution")
+    ans =self.func(*args, **kwargs)
+    print("After after execution")
+    return ans
+
+
+@N_Decorator
+def display_hello_message(name):
+  return f"Hello {name}, hope you hae a great day."
+
+print(display_hello_message("James"))
+```
+
+In this example, one is executing `display_hello_message` which will print a message before and after the execution. It will then return and print the hello message. 
