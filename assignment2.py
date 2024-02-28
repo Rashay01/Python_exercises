@@ -17,7 +17,7 @@ class Bank:
             self.__create_transaction("withdraw", amount)
             return f"Success. {self.display_balance()}"
         else:
-            return f"Unsuccess. Insufficent funds."
+            return f"Unsuccessful. Insufficent funds."
 
     def deposit(self, amount):
         self.balance += amount
