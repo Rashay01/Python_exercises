@@ -62,9 +62,9 @@ from functools import wraps
 def outer(func):
     @wraps(func)
     def inner(*args, **kwargs):
-        """do things before function is eecuted"""
+        """do things before function is executed"""
         func(*args, **kwargs)
-        """do things after function is eecuted"""
+        """do things after function is executed"""
     return inner
 
 @outer
@@ -76,3 +76,21 @@ func()
 
 
 ## Using classes
+
+### Syntax/layout
+```python
+class ClassName:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        """do things before function is executed"""
+        return self.func(*args, **kwargs)
+
+
+@ClassName
+def func(values):
+    pass
+
+func()
+```
