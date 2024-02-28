@@ -85,7 +85,7 @@ def time_taken(func):
         start = time.time()
         func(*args, **kwargs)
         end = time.time()
-        print(f"Time taken to execute function:{(end - start)/1000}")
+        print(f"Time taken to execute function:{(end - start)/1000}s")
     return inner
 
 
@@ -96,7 +96,7 @@ def adding_multiply(num):
 
 adding_multiply(10)
 ```
-In this example we are using the decorator
+In this example we are using the decorator created in the `time_taken` function which takes the start time before the function executes. The end time once the function has finish executing. It passes the argument `10` to the parameter `*args`. It will display the answer to the function `adding_multiply` and then the time taken to execute the function.
 
 
 ## Using classes
