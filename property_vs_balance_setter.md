@@ -143,4 +143,4 @@ def display_hello_message(name):
 print(display_hello_message("James"))
 ```
 
-In this example, one is executing `display_hello_message` function. The decorator `@N_Decorator` which will print a message before and after the execution of the function `display_hello_message`. It will then return and print the hello message for `James`. 
+In this example, one is executing `display_hello_message` function. The decorator `@N_Decorator` will print a message before and after the execution of the function `display_hello_message`. It will then return and print the hello message for `James`. 
