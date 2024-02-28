@@ -1,15 +1,16 @@
 Assignment
-1. @property,  @balance.setter
-# @property
+# @property,  @balance.setter
+## @property
 
 It is a built in decorator in python. It enables a getter function to act like a normal attribute of a class. You are able to drop the `()` of the getter function name.
 
-# @balance.setter
+## @balance.setter
 
 It works in conjunction with the @property decorator. It enables the setter function to take in a value without the function i.e `()`.One can alter the name `balance` to the name of the getter function. It allows one to assign a value to the function, in the same mannor as a variable.
 
 `@getter_function_name.setter`
 
+### Example:
 ```python
 class Athlete:
   company = 'test'
@@ -46,6 +47,10 @@ print(pt1.balance)
 
 In this example, one is able to get the athlete pt1's balance as `pt1.email` instad of calling it like a function `pt1.email()`. One is also able to set the new balance value using the assignment operator `=` instaed of calling a setter function `pt1.balance("Great")`
  
-2. Creating you own decorator 
-Using function
-Using classes
+# Creating you own decorator 
+
+## Using function
+
+To create a decorator in a function. You need a outer function which takes a function a parameter and a inner function which will wrap around the function passed - that will be executed. The inner function is able to access the function that is passed because it is apart of its lexical scope.
+
+## Using classes
