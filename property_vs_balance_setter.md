@@ -51,6 +51,15 @@ In this example, one is able to get the athlete pt1's balance as `pt1.email` ins
 
 ## Using function
 
-To create a decorator in a function. You need a outer function which takes a function a parameter and a inner function which will wrap around the function passed - that will be executed. The inner function is able to access the function that is passed because it is apart of its lexical scope.
+To create a decorator in a function. You need a outer function which takes a function a parameter and a inner function which will wrap around the function passed - that will be executed. the outer function is a Higher Order Function (HOF). The inner function is able to access the function that is passed because it is apart of its lexical scope. In the inner function you can add things to do before and after the passed function is called. You are able to use the outer function's name as the name of the decorator `@outer_function_name`.
 
+Layout/ styntax:
+
+```python
+def outer(func):
+    def inner():
+        """do things before function is eecuted"""
+        func()
+        """do things after function is eecuted"""
+```
 ## Using classes
