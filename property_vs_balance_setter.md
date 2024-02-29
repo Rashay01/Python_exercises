@@ -2,7 +2,7 @@ Assignment
 # @property,  @balance.setter
 ## @property
 
-It is a built in decorator in python. It enables a getter function to act like a normal attribute of a class. You are able to drop the `()` of the getter function name.
+It is a built in decorator in python. It enables a getter function to act like a normal instance variable of a class. You are able to drop the `()` of the getter function name.
 
 ## @balance.setter
 
