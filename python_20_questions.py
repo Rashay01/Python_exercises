@@ -386,7 +386,7 @@ for i in range(len(ingredients) - 1):
     for j in range(i + 1, len(ingredients)):
         if i != j:
             print(
-                f"Combining {ingredients[i]} and {ingredients[j]} produces a Visibility Potion."
+                f"Combining {ingredients[i]} and {ingredients[j]} produces a {ingredients[i]} {ingredients[j]} Potion."
             )
 
 # =========================================================================================================================================
