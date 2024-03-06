@@ -34,3 +34,23 @@ Alternative:
 In gitbash:
 - `cd` navigate to folder location
 -  type `git clone` (enter url of repository)
+
+
+Git Commands:
+
+git init
+git add .
+git commit -m "This is my first project with git"
+git add .
+git commit -m "Created double function"
+git log
+git add .
+git commit -m "Cool file with awesome msg"
+git log
+git checkout c7f9f09860
+git checkout -
+git log
+git checkout 4b8be
+git checkout c7f9
+git checkout -
+git checkout master
