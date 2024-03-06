@@ -65,3 +65,8 @@ git log -Sdouble -p
 
 # Checkout to the master branch (old)
 # Merge with dev branch (new) git merge dev
+
+# Merge Conflict
+# 1. Resolve
+# 2. Stage
+# 3. Commit
