@@ -62,3 +62,6 @@ git log -Sdouble -p
 ### git log -Smap -p
 ### git log -2 (top 2 commits)
 ### git log --graph (graph commits)
+
+# Checkout to the master branch (old)
+# Merge with dev branch (new) git merge dev
