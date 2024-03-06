@@ -39,9 +39,9 @@ branch:
 
 One should use this on a branch that one would like to update. One should make sure that this branch has not been shared or cloned.
 
-## what are forks, why are they used
+## what are forks, why are they used ?
 
-Forks are a operation that 
+Forks are a operation that copys a repository where changes can be made without affecting the original respository. In forks there exsits a connection between the original respository and the forked repository. Forks are used so that one does not make changes to the original repository, which could break the project or not comply with the rules. This will become tedious and hard for the coder to go back and revert these changes in a big project.
 
 ## git rebase -i
 The `i` stands for interactive. It looks at the root commit and one by one applies the following commits.The diffrence between a interactive rebase and normal rebase is that, a normal rebase does this automatically where as in rebase interactive - one is able to edit each commit. One is able to edit an old commit message, delete a old commit, combine multiple commits (sqaush them), reorder commits, make fixes to old commits, reopen commits for editing. 
