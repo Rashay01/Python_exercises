@@ -54,3 +54,6 @@ git checkout 4b8be
 git checkout c7f9
 git checkout -
 git checkout master
+
+git log --help
+git log -Sdouble -p
