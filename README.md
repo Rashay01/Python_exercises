@@ -57,3 +57,8 @@ git checkout master
 
 git log --help
 git log -Sdouble -p
+
+
+### git log -Smap -p
+### git log -2 (top 2 commits)
+### git log --graph (graph commits)
