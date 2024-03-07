@@ -40,7 +40,7 @@ C1 - C2 - C3 - C4 - C5
 branch:
 ```
 
-One should use rebase merge on a branch one would like to update. One should ensure this branch has not already been shared or cloned.
+One should use rebase merge on a branch one would like to update. One should ensure that this branch has not already been shared or cloned.
 
 ## what are forks, why are they used ?
 
