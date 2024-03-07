@@ -19,7 +19,7 @@ One should use a merge when one wants to update a branch, which has been shared 
 
 ### Squash merge 
 
-In squash merge, all the commits from the feature branch are made into a single commit, that is merged onto the main branch. The main branch will have one commit that represents all the commits. In a `git squash merge`, the merge does not carry over the commit history of the feature branch to the main branch. 
+In squash merge, all the commits from the feature branch are made into a single commit, that is merged onto the main branch. The main branch will have one commit that represents all the commits that were made. In a `git squash merge`, the merge does not carry over the commit history of the feature branch to the main branch. 
 
 ```
 feature branch:
