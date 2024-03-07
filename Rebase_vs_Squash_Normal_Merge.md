@@ -49,4 +49,4 @@ A Fork is an operations that copies an existing repository where changes may be 
 ## git rebase -i
 The `i` stands for interactive. `git rebase -i` takes the the root commit and thereafter sequentially applies all the commits that follow.The diffrence between a interactive rebase and a normal rebase is that, the normal rebase automatically redoes all the commits whereas in rebase interactive - one is able to edit each individual commit. Git interactive rebase allows one to change individual commits, squash commits together, delete commits or reorder the commits. This allows one to clean up their Git commit history, to make it linear and meaningfuf. This may make it easier to understand the history of the respository. 
 
-One should only use this technique when the branch has not been shared with anyone, in order to prevent future merge conflicts.
+One should only use this technique when the branch has not been shared, in order to prevent future merge conflicts.
