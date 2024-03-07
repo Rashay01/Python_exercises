@@ -19,7 +19,7 @@ One should use a merge when one wants to update a branch, which has been shared 
 
 ### Squash merge 
 
-In squash merge, all the commits from the feature branch is made into a single commit that is merged onto the main branch. The main branch will have one commit that represents all the commits. In a git squarsh merge it does not carry over the commit history of the feature branch to the main branch. 
+In squash merge, all the commits from the feature branch are made into a single commit, that is merged onto the main branch. The main branch will have one commit that represents all the commits. In a `git squash merge`, the merge does not carry over the commit history of the feature branch to the main branch. 
 
 ```
 feature branch:
@@ -28,7 +28,9 @@ feature branch:
 C1 - C2 - C3    C6
 main-branch:
 ```
-One should use this squash merge when they want to merge with their master branch and they do not require the history of all the commits.
+The above highlights the feature branch (C4-C5) merges with the main branch in a single commit (C6) with no history.
+
+One should use this squash merge when one wants to merge with the master branch and one does not require the history of all the commits.
 
 ### Rebase merge
 In rebase, all the comits from the feature branch are added individally onto the base branch. All the hashes in the commit will be recaultated. It basically go back intime and redos these commits with a new hash that represents the commit made. This helps to get ride of any dummy commits. It may lead to merge conflicts if someone tries already cloned your branch and then tries to merge to your rebased branch. This is due to the changed hashes.
