@@ -13,7 +13,7 @@ feature branch:
 C1-C2-C3         -C6
 main-branch:
 ```
-THe above highlights the feature branch (C4-C5) merging with the main branch in commit 6 (C6).  
+The above highlights the feature branch (C4-C5) merging with the main branch in commit 6 (C6).  
 
 One should use a merge when one wants to update a branch, which has been shared with others.
 
