@@ -4,7 +4,7 @@
 
 ### Normal merge 
 
-All the commits from the feature branch are merged onto the main branch (the branch you want the merge to be applied to). It carries over all the commit history from the feature branch to the main branch.
+All the commits from the feature branch are merged onto the main branch (the branch, one wants the merge to be applied to). It carries over all the commit history from the feature branch to the main branch.
 
 ```
 feature branch:
@@ -13,8 +13,9 @@ feature branch:
 C1-C2-C3         -C6
 main-branch:
 ```
+THe above highlights the feature branch (C4-C5) merging with the main branch in commit 6 (C6).  
 
-One should use a merge when they want to update a branch when this branch has been shared with others.
+One should use a merge when one wants to update a branch, which has been shared with others.
 
 ### Squash merge 
 
