@@ -25,10 +25,10 @@ In squash merge, all the commits from the feature branch are made into a single 
 feature branch:
             - C4 - C5
            /   \  /
-C1 - C2 - C3    C6
+C1 - C2 - C3  -  C6
 main-branch:
 ```
-The above highlights the feature branch (C4-C5) merges with the main branch in a single commit (C6) with no history.
+The above highlights the feature branch (C4-C5) which merges with the main branch, in a single commit (C6) with no history.
 
 One should use this squash merge when one wants to merge with the master branch and one does not require the history of all the commits.
 
