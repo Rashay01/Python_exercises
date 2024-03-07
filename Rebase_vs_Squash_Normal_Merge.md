@@ -28,7 +28,7 @@ feature branch:
 C1 - C2 - C3  -  C6
 main-branch:
 ```
-The above highlights the feature branch (C4-C5) which merges with the main branch, in a single commit (C6) with no history.
+The above highlights the feature branch (C4-C5) which merges with the main branch, in a single commit (C6) with no history (C4 and C5).
 
 One should use this squash merge when one wants to merge with the master branch and one does not require the history of all the commits.
 
