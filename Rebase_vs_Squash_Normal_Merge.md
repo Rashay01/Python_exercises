@@ -44,7 +44,7 @@ One should use rebase merge on a branch one would like to update. One should ens
 
 ## what are forks, why are they used ?
 
-Forks are a operation that copys a repository where changes can be made without affecting the original respository. In forks there exsits a connection between the original respository and the forked repository. Forks are used so that one does not make changes to the original repository, which could break the project or not comply with the rules. This will become tedious and hard for the coder to go back and revert these changes in a big project.
+A Fork is an operations that copies an existing repository where changes may be made without affecting the original respository. In forks there exsits a connection between the original respository and the forked repository (cpoied repository). Forks prevent changes to the original repository. Changes could break the project or not comply with the rules of the original repository. If oe is able to change the oringinal repository  it will become tedious and difficult to go back and reverse these changes.
 
 ## git rebase -i
 The `i` stands for interactive. It looks at the root commit and one by one applies the following commits.The diffrence between a interactive rebase and normal rebase is that, a normal rebase does this automatically where as in rebase interactive - one is able to edit each commit. One is able to edit an old commit message, delete a old commit, combine multiple commits (sqaush them), reorder commits, make fixes to old commits, reopen commits for editing. 
