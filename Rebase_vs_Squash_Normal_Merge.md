@@ -33,14 +33,14 @@ The above highlights the feature branch (C4-C5) which merges with the main branc
 One should use this squash merge when one wants to merge with the master branch and one does not require the history of all the commits.
 
 ### Rebase merge
-In rebase, all the comits from the feature branch are added individally onto the base branch. All the hashes in the commit will be recaultated. It basically go back intime and redos these commits with a new hash that represents the commit made. This helps to get ride of any dummy commits. It may lead to merge conflicts if someone tries already cloned your branch and then tries to merge to your rebased branch. This is due to the changed hashes.
+In rebase merge, all the comits from the feature branch are added individually onto the base branch. All the hashes in the commit will be recalculated. It basically goes back in time and redoes these commits with a new hash which represents the commit made. This helps to get rid of any dummy commits. This may lead to merge conflicts, if the branch was already cloned/forked and an attempt is made to merge to the rebased branch. This occurs due to the changed hashes.
 
 ```
 C1 - C2 - C3 - C4 - C5
 branch:
 ```
 
-One should use this on a branch that one would like to update. One should make sure that this branch has not been shared or cloned.
+One should use rebase merge on a branch one would like to update. One should ensure this branch has not already been shared or cloned.
 
 ## what are forks, why are they used ?
 
